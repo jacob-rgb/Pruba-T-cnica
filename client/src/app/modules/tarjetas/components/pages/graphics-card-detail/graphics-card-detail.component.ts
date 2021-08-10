@@ -28,4 +28,8 @@ export class GraphicsCardDetailComponent implements OnInit {
     })
   }
 
+  ngOnDestroy():void {
+    this.tarjetasApi.tarjetasArray.unsubscribe();
+  }
+
 }
