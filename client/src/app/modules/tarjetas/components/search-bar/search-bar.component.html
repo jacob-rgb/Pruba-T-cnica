@@ -1,0 +1,7 @@
+<div class="searchBarCont">
+    <form (submit)="searchByWordord()">
+        <button type="button" class="viewAllBtn" (click)="verTodos()">Ver Todos</button>
+        <input type="text" name="terminoBusqueda" id="terminoBusqueda" [(ngModel)]='terminoBusqueda'>
+        <button type="submit" class="searchBtn"><i class="fas fa-search"></i></button>
+    </form>
+</div>

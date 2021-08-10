@@ -1,0 +1,19 @@
+<div class="separador"></div>
+<div *ngIf="datosTarjeta" class="contTarjeta animate__animated animate__fadeIn">
+    <h2>{{ datosTarjeta.name }}</h2>
+    <div class="detailsTarjeta">
+        <div class="image">
+            <img src="{{ datosTarjeta.image }}" alt="{{ datosTarjeta.name }}">
+        </div>
+        <div class="infoTarjeta">
+            <p><b>Nombre:</b> {{ datosTarjeta.name }}</p>
+            <p><b>Modelo:</b> {{ datosTarjeta.model }}</p>
+            <p><b>Fabricante:</b> {{ datosTarjeta.manufacturer }}</p>
+            <p><b>Modelo:</b> {{ datosTarjeta.model }}</p>
+            <p><b>Precio:</b> {{ datosTarjeta.price | currency:'EUR':'symbol' }}</p>
+        </div>
+        <p><b>Descripción:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae illum aliquam quisquam, saepe perferendis cumque ullam, quis reiciendis exercitationem est fuga asperiores laborum quo. Ad similique praesentium nostrum ipsa blanditiis amet eum possimus non suscipit vero debitis, quibusdam officiis hic tenetur fugiat tempora facere minus consectetur? Debitis, voluptatem commodi?</p>
+        <a routerLink="/graphics-cards" type="button" class="backBtn">Volver <i class="fas fa-arrow-left"></i></a>
+    </div>
+</div>
+<app-loading *ngIf='loading'></app-loading>

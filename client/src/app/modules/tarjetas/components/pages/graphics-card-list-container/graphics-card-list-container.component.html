@@ -1,0 +1,18 @@
+<div class="separador"></div>
+<h1 class="text-center my-4" (click)="tarjetasValidator()">Nuestros Productos</h1>
+<app-search-bar></app-search-bar>
+
+<div  class="tarjetasContainer">
+    <app-tarjeta-card *ngFor='let tarjeta of tarjetas | async | paginate: { id:"lista" , itemsPerPage: 8, currentPage: p}' [datosTarjeta]="tarjeta"></app-tarjeta-card>
+</div>
+<div *ngIf='tarjetasValidator()' class="noCoincidencias">
+    <p>No se ha encontrado ninguna Coincidencia</p>
+</div>
+<pagination-controls 
+              id="lista"
+              (pageChange)="p = $event" 
+              previousLabel="Anterior"
+              nextLabel="Siguiente">
+</pagination-controls>
+
+<app-loading *ngIf='loading | async'></app-loading>

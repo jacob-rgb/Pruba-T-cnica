@@ -1,0 +1,50 @@
+.searchBarCont {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+.searchBarCont .viewAllBtn {
+    margin-right: 1rem;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    background-color: orange;
+    border-radius: 8px;
+}
+
+.searchBarCont .viewAllBtn:active, 
+.searchBarCont .searchBtn:active {
+    background-color: rgb(151, 149, 149, .7);
+}
+
+.searchBarCont input {
+    width: min(40vw, 196px);
+    outline: none;
+    border: 1px solid rgb(223, 156, 32);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.searchBarCont input:focus {
+    outline: 2px solid rgb(223, 156, 32);
+}
+
+.searchBarCont .searchBtn {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(223, 156, 32);
+    border-radius: 100%;
+    border: none;
+}
+
+@media screen and(max-width: 600px) {
+    .searchBarCont {
+        justify-content: center;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,81 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../../../../assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-lg-6 {
+    margin: 0;
+    padding: 0;
+}
+
+.imageCol img {
+    width: 100%;
+    height: 100%;
+}
+
+.textCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(210deg, orange, rgb(115, 239, 255), orange);
+    text-align: center;
+    padding: 10px 100px;
+}
+
+.textCol p {
+    font-size: 20px;
+}
+
+.textCol .btnProducts {
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.textCol .btnProducts:hover {
+    transform: scale(1.2);
+}
+
+.textCol .btnProducts:active {
+    background-color: gray;
+}
+
+@media screen and(max-width: 1000px) {
+    .rowReverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .textCol {
+        padding: 10px 20px;
+    }
+
+    .ocultar {
+        display: none;
+    }
+}
+

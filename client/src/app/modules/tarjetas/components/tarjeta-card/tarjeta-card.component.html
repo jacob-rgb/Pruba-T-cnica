@@ -1,0 +1,15 @@
+<div class="contenedor_tarjeta animate__animated animate__fadeIn">
+    <figure  class="cardTarjeta">
+        <a *ngIf="datosTarjeta" routerLink="/graphics-cards/{{datosTarjeta._id}}">
+          <img src="{{datosTarjeta.image}}" alt="{{datosTarjeta.name}}">
+          <figcaption class="details">
+              <p><b>Nombre:</b>{{datosTarjeta.name}}</p>
+              <p><b>Modelo:</b>{{datosTarjeta.model}}</p>
+              <p><b>Fabricante:</b>{{datosTarjeta.manufacturer}}</p>
+              <p><b>Precio:</b>{{datosTarjeta.price | currency:'EUR':'symbol'}}</p>
+          </figcaption>
+      </a>
+      </figure>
+</div>
+ 
+

@@ -1,0 +1,11 @@
+./backend/node_modules
+./backend/node_modules/
+./backend/.env
+
+client/dist
+client/tmp
+client/out-tsc
+
+client/bazel-out
+client/node_modules
+client/node_modules/

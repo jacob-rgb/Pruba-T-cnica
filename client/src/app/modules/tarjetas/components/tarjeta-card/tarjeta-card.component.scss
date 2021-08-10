@@ -1,0 +1,79 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cardTarjeta {
+    margin: 10px;
+    transition: transform .7s ease;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.cardTarjeta a {
+    display: inline-block;
+}
+
+.contenedor_tarjeta:hover .cardTarjeta {
+    border: 4px solid orange;
+    border-radius: 8px;
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow:    0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    box-shadow:         0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cardTarjeta img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+.cardTarjeta .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+    background: linear-gradient(to right, rgba(115, 167, 177, 0.7), rgb(255, 255, 255, 0.5) );
+}
+
+.cardTarjeta img, .cardTarjeta .details {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+@media screen and(max-width: 900px ) {
+    .cardTarjeta .details {
+        position: relative;
+        backface-visibility: visible;
+        transform: perspective(0) rotateY(0);
+    }
+
+    .cardTarjeta {
+        transition: none;
+    }
+
+    .contenedor_tarjeta:hover .cardTarjeta {
+        transform: none;
+    }
+}

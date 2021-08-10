@@ -1,0 +1,23 @@
+<div class="minavbar">
+    <div class="minavbar-brand">
+        <h2><i>PC Shop</i></h2>
+    </div>
+    <div class="menu-icon">
+        <button *ngIf="!isOpen" class="" (click)="toggleSidebar()"><i class="fas fa-bars fa-2x"></i></button>
+    </div>
+</div>
+
+<div #sidebar class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+        <button (click)="toggleSidebar()" class="closeBtn"><i class="fas fa-times-circle fa-2x"></i></button>
+    </div>
+    <div class="menu">
+        <ul class="list-group">
+            <li  routerLink="/inicio" routerLinkActive="active-link" class="list-item"><a>Inicio</a></li>
+            <li class="list-item" routerLink="/graphics-cards" routerLinkActive="active-link"><a>Tarjetas Gráficas</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
