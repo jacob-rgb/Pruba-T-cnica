@@ -39,6 +39,7 @@ class Server {
 
     routes() {
         this.app.use( this.tarjetasPath, require('../routes/tarjetasRouter'));
+        this.app.use( '*', express.static('public'));
     }
 
     listen() {
