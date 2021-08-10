@@ -10,6 +10,7 @@ export class TarjetasApiService {
   tarjetasArray: BehaviorSubject<any[]> = new BehaviorSubject([]);
   loading: BehaviorSubject<boolean> = new BehaviorSubject(true);
   devUrl: string = "http://localhost:3800/api/graphics-cards"; 
+  prodUrl: string = "https://prueba-tecnica-jacobo-ram.herokuapp.com/api/graphics-cards";
 
   constructor(private httpClient: HttpClient) {
     this.getTarjetas();
