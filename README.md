@@ -1,6 +1,11 @@
 # Pruba-Técnica
 Proyecto de prueba dedicado a crear una api y consumirla en la parte del front-end
 
+## Demo Online
+Pincha [aquí](https://prueba-tecnica-jacobo-ram.herokuapp.com/inicio) para ver el resultado del proyecto.
+
+La aplicación está desplegada en heroku, puede tardar unos segundos en cargar porque heroku mantiene las aplicaciones inactivas en su modo gratuito.
+
 ## Comenzando
 *Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.*
 
